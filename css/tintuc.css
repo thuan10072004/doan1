@@ -1,0 +1,162 @@
+/* Existing CSS styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif; 
+}
+
+.container1 {
+    margin: 0 auto; 
+    background-color:#2d233b;
+    box-shadow: 0 0 10px rgba(14, 13, 13, 0.1);
+    height: auto;
+    margin-top: -1em;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 0 2em; 
+}
+.logo img {
+    height: 6em;
+    width: 130%;
+    margin-right: 2em;
+    margin-left: -3em;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    list-style-type: none;
+}
+
+.nav-links li {   
+    margin-right: 3em;
+}
+
+.nav-links a {
+    display: block;
+    padding: 1em 0.7em; 
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.nav-links li:hover {
+    background-color: rgba(192, 192, 192, 0.26);
+}
+
+.limitAge {
+    position: fixed;
+    z-index: 1000;
+    margin-top: 7em;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    height: 34em;
+}
+
+.mySlides {
+    display: none;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.listbtn {
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-right: 10px;
+    color: white;
+    width: 7em;
+    height: 4em;
+    background: url("../Image/backgroundbtn.png") bottom center no-repeat !important;
+    background-size: 100% 100% !important;
+    margin-top: 4em; /* Add top margin to each button */
+}
+.button-wrapper {
+    width: 60%; 
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto; 
+}
+
+.listbtn:first-child {
+    margin-left: 0; 
+}
+
+.listbtn:hover {
+    background-color: #0056b3;
+}
+
+/* New CSS styles for news items */
+
+.news-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.news-item img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.news-item-content {
+    flex: 1;
+}
+
+.news-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    font-size: 1.2em;
+}
+
+/* Add horizontal line between news items */
+.news-item + .news-item {
+    border-top: 1px solid #ccc;
+}
+
+/* Center-align news items */
+.section-wrap .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Adjust spacing */
+.section-wrap .content img {
+    margin-right: 20px;
+}
